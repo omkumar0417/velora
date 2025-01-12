@@ -10,14 +10,18 @@ const subjectsData = {
         // Removed subject PPPS
     ],
     2: [
+        { name: "Advanced Calculus and Complex Analysis", link: "#", description: "Advanced Calculus and Complex Analysis covers advanced topics in calculus and complex number theory." },
         { name: "Chemistry", link: "#", description: "Chemistry is the study of substances and their properties." },
-        { name: "Biology", link: "#", description: "Biology is the study of living organisms." },
-        { name: "OOPs", link: "#", description: "Object-Oriented Programming (OOP) is a programming paradigm based on the concept of objects." },
-        { name: "Data Structures", link: "#", description: "Data structures are ways of organizing and storing data." },
-        { name: "Algorithms", link: "#", description: "Algorithms are step-by-step procedures for solving problems." },
-        { name: "Discrete Mathematics", link: "#", description: "Discrete mathematics is the study of mathematical structures that are fundamentally discrete rather than continuous." },
-        { name: "Linear Algebra", link: "#", description: "Linear algebra is the branch of mathematics concerning linear equations and linear functions." },
-        { name: "Evs", link: "#", description: "Environmental Science (Evs) is the study of the environment and solutions to environmental problems." }
+        { name: "Electrical & Electronics Engineering", link: "#", description: "Electrical & Electronics Engineering involves the study of electrical systems and electronic devices." },
+        { name: "Environmental Science", link: "#", description: "Environmental Science (Evs) is the study of the environment and solutions to environmental problems." },
+        { name: "French", link: "#", description: "French is the study of the French language and its literature." },
+        { name: "German", link: "#", description: "German is the study of the German language and its literature." },
+        { name: "Japanese", link: "#", description: "Japanese is the study of the Japanese language and its literature." },
+        { name: "Engineering Graphics and Design", link: "#", description: "Engineering Graphics and Design involves the creation of technical drawings and designs." },
+        { name: "Object-Oriented Design and Programming", link: "#", description: "Object-Oriented Design and Programming (OOP) is a programming paradigm based on the concept of objects." },
+        { name: "Universal Human Values", link: "#", description: "Universal Human Values focuses on the study of human values and ethics." },
+        { name: "Introduction to Programming Skills", link: "#", description: "Introduction to Programming Skills covers the basics of programming and coding." },
+        { name: "Constitution of India", link: "#", description: "Constitution of India covers the fundamental principles and laws of the Indian Constitution." }
     ],
     3: [
         { name: "Operating Systems", link: "#", description: "Operating systems are software that manage computer hardware and software resources." },
