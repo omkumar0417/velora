@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap'); /* Import a beautiful font */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjust to space between header and footer */
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px; /* Adjust font size for better readability */
+    line-height: 1.6; /* Improve line spacing */
+}
+
+header {
+    width: 100%;
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* Light text color */
+    padding: 10px 0; /* Reduced padding for smaller height */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    /* Removed transition for hover effect */
+}
+
+header h1:hover {
+    transform: none; /* Remove scale up on hover */
+    color: inherit; /* Remove color change on hover */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: block; /* Show the container initially */
+    width: auto; /* Set width based on content */
+    max-width: 800px; /* Maximum width */
+    height: auto; /* Adjust height to fit content */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Add padding */
+    background-color: #ffffff; /* Light container background */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    text-align: center;
+    flex: 1;
+    transition: width 0.3s, height 0.3s, padding 0.3s; /* Add transition for smooth expansion */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.container.expanded {
+    display: block; /* Show the container when expanded */
+    width: 800px; /* Expanded width */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px; /* Expanded padding */
+}
+
+.semester-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.semester-options button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.semester-options button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhance hover shadow */
+}
+
+#subjects-container {
+    margin-top: 20px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#subjects-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#subjects-container td {
+    background-color: #f0f0f0; /* Dark white background for subjects */
+    color: #333; /* Dark text color */
+    padding: 20px;
+    margin: 10px 15px; /* Add margin of 15px to both sides */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    width: calc(100% - 30px); /* Adjust width to account for side margins */
+    box-sizing: border-box;
+    vertical-align: top;
+    transition: transform 0.3s; /* Add transition for hover effect */
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+    text-align: center; /* Center the content */
+    position: relative; /* Ensure proper stacking context */
+    z-index: 1; /* Ensure proper stacking context */
+    height: 200px; /* Ensure all boxes have the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#subjects-container td:hover {
+    transform: scale(1.05); /* Add hover effect */
+    z-index: 10; /* Bring the hovered element to the front */
+}
+
+#subjects-container td h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s; /* Add transition for hover effect */
+    font-weight: bold; /* Make subject titles bold */
+}
+
+#subjects-container td h3:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+.subject-details {
+    background-color: #ffffff; /* Light background for details */
+    color: #333; /* Dark text color */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+}
+
+.subject-details h3 {
+    margin-top: 0;
+}
+
+.subject-details button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.subject-details button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhance hover shadow */
+}
+
+.subject-details .notes {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subject-details .notes h4 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.subject-details .notes p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.subject-details .notes p a {
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s; /* Add transition for hover effect */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.subject-details .notes p a:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    color: #0056b3; /* Change color on hover */
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px; /* Adjusted padding for better spacing */
+    background-color: #222; /* Slightly darker black background */
+    color: #fff; /* Light text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative; /* Make footer relative */
+    bottom: 0; /* Stick to the bottom */
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.footer p,
+.footer a,
+.footer .social-icons a,
+.footer .footer-links a {
+    color: #fff; /* White text color */
+}
+
+.footer a:hover,
+.footer .social-icons a:hover,
+.footer .footer-links a:hover {
+    color: #ccc; /* Slightly lighter color on hover */
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    flex: 1;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.footer .footer-left {
+    text-align: left;
+}
+
+.footer .footer-right {
+    text-align: right;
+    margin-right: 10px; /* Move slightly to the left */
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s; /* Add transition for link color */
+}
+
+.footer a:hover {
+    text-decoration: none; /* Remove underline */
+    color: #0056b3; /* Change color on hover */
+    border: 1px solid #0056b3; /* Add border on hover */
+    padding: 5px; /* Add padding to accommodate border */
+    border-radius: 5px; /* Add border radius for box-like appearance */
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #007bff; /* Social icon color */
+    transition: color 0.3s; /* Add transition for icon color */
+}
+
+.footer .social-icons a:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+.footer .footer-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-links a {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #007bff; /* Link color */
+    transition: color 0.3s; /* Add transition for link color */
+}
+
+.footer .footer-links a:hover {
+    text-decoration: none; /* Remove underline */
+    color: #0056b3; /* Change color on hover */
+    border: 1px solid #0056b3; /* Add border on hover */
+    padding: 5px; /* Add padding to accommodate border */
+    border-radius: 5px; /* Add border radius for box-like appearance */
+}
+
+.footer .telegram-contact {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .telegram-contact p {
+    margin: 0 10px 0 0; /* Add margin to the right of the text */
+}
+
+.footer .telegram-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0088cc; /* Telegram blue */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.footer .telegram-button:hover {
+    background-color: #006699;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhance hover shadow */
+}
+
+.telegram-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.telegram-icon:hover {
+    transform: scale(1.1);
+}
+
+.join-button {
+    display: inline-block;
+    padding: 5px 10px; /* Reduced padding for smaller button */
+    font-size: 14px; /* Smaller font size */
+    color: #007bff; /* Blue text color */
+    background-color: #fff; /* White background */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.join-button:hover {
+    background-color: #e6e6e6; /* Light grey on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhance hover shadow */
+}
+
+.privacy-policy {
+    padding: 20px;
+    background-color: #ffffff; /* Light background */
+    color: #333; /* Dark text color */
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+}
+
+.privacy-policy h2 {
+    font-size: 24px;
+    color: #007bff; /* Blue color for headings */
+    margin-bottom: 20px;
+}
+
+.privacy-policy h3 {
+    font-size: 20px;
+    color: #0056b3; /* Darker blue for subheadings */
+    margin-top: 20px;
+}
+
+.privacy-policy p,
+.privacy-policy ul {
+    font-size: 16px;
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 20px;
+}
+
+.privacy-policy ul {
+    padding-left: 20px;
+}
+
+.privacy-policy ul li {
+    margin-bottom: 10px;
+}
+
+.terms-of-service {
+    padding: 20px;
+    background-color: #ffffff; /* Light background */
+    color: #333; /* Dark text color */
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Roboto', sans-serif; /* Use a modern font */
+}
+
+.terms-of-service h2 {
+    font-size: 24px;
+    color: #007bff; /* Blue color for headings */
+    margin-bottom: 20px;
+}
+
+.terms-of-service h3 {
+    font-size: 20px;
+    color: #0056b3; /* Darker blue for subheadings */
+    margin-top: 20px;
+}
+
+.terms-of-service p,
+.terms-of-service ul {
+    font-size: 16px;
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 20px;
+}
+
+.terms-of-service ul {
+    padding-left: 20px;
+}
+
+.terms-of-service ul li {
+    margin-bottom: 10px;
+}
+
+.contribute-section {
+    color: #ff4500; /* Change text color to orange-red */
+}
+
+.quote {
+    font-family: 'Dancing Script', cursive; /* Apply the beautiful font */
+    font-size: 1.3em; /* Adjust font size */
+    color: #fff; /* Change font color to white */
+    margin-top: 10px; /* Add some margin */
+    quotes: "“" "”"; /* Add double quotes */
+}
+
+.quote::before {
+    content: open-quote;
+}
+
+.quote::after {
+    content: close-quote;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container.expanded {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .semester-options button {
+        width: calc(100% - 20px); /* Full width for smaller screens with margin */
+        margin: 5px 10px; /* Add margin for smaller screens */
+    }
+
+    #subjects-container td {
+        width: calc(100% - 30px); /* Full width for smaller screens, accounting for side margins */
+    }
+
+    .footer {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        text-align: center;
+        margin: 5px 0; /* Adjust margin for better spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .semester-options button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #subjects-container td {
+        padding: 10px;
+    }
+
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        text-align: center;
+        margin: 5px 0; /* Adjust margin for better spacing */
+    }
+}
+
+.footer-left i {
+    font-size: 30px;
+    transition: transform 0.3s, color 0.3s; /* Add transition for hover effect */
+}
+
+.footer-left i:hover {
+    transform: scale(1.2); /* Scale up on hover */
+    color: #0056b3; /* Change color on hover */
+}
