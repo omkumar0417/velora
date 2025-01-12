@@ -6,8 +6,8 @@ const subjectsData = {
         { name: "Biology", link: "#", description: "Biology is the study of living organisms." },
         { name: "English", link: "#", description: "English is the study of language and literature." },
         { name: "History", link: "#", description: "History is the study of past events." },
-        { name: "Geography", link: "#", description: "Geography is the study of places and the relationships between people and their environments." },
-        { name: "PPPS", link: "#", description: "PPPS is the study of principles and practices of professional skills." } // Added subject PPPS
+        { name: "Geography", link: "#", description: "Geography is the study of places and the relationships between people and their environments." }
+        // Removed subject PPPS
     ],
     2: [
         { name: "Chemistry", link: "#", description: "Chemistry is the study of substances and their properties." },
