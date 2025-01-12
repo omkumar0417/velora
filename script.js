@@ -131,6 +131,20 @@ function showSubjectDetails(semester, index) {
         <div class="subject-details">
             <h3>${subject.name}</h3>
             <p><strong>Description:</strong> ${subject.description}</p>
+            ${subject.name === "French" ? `
+            <div class="notes">
+                <h4>Notes</h4>
+                <p><a href="https://example.com/complete-1-to-5-ppt" target="_blank" class="unit-link">Complete Notes Unit 1 to 5 PPT</a></p>
+                <p><a href="https://example.com/french-book" target="_blank" class="unit-link">French Book</a></p>
+                <p><a href="https://example.com/french-book-translation" target="_blank" class="unit-link">French Book Translation</a></p>
+            </div>
+            <div class="pyq">
+                <h4>PYQ</h4>
+                <p><a href="https://example.com/pyq1" target="_blank" class="pyq-link">Previous Year Question 1</a></p>
+                <p><a href="https://example.com/pyq2" target="_blank" class="pyq-link">Previous Year Question 2</a></p>
+                <p><a href="https://example.com/pyq3" target="_blank" class="pyq-link">Previous Year Question 3</a></p>
+            </div>
+            ` : `
             <div class="notes">
                 <h4>Notes</h4>
                 <p><a href="https://en.wikipedia.org/wiki/Unit_1" target="_blank" class="unit-link">Unit 1</a></p>
@@ -139,6 +153,13 @@ function showSubjectDetails(semester, index) {
                 <p><a href="https://en.wikipedia.org/wiki/Unit_4" target="_blank" class="unit-link">Unit 4</a></p>
                 <p><a href="https://en.wikipedia.org/wiki/Unit_5" target="_blank" class="unit-link">Unit 5</a></p>
             </div>
+            <div class="pyq">
+                <h4>PYQ</h4>
+                <p><a href="https://example.com/pyq1" target="_blank" class="pyq-link">Previous Year Question 1</a></p>
+                <p><a href="https://example.com/pyq2" target="_blank" class="pyq-link">Previous Year Question 2</a></p>
+                <p><a href="https://example.com/pyq3" target="_blank" class="pyq-link">Previous Year Question 3</a></p>
+            </div>
+            `}
             <button onclick="showSemesters()">Back to Semesters</button>
         </div>
     `;

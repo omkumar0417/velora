@@ -208,6 +208,39 @@ h1 {
     color: #0056b3; /* Change color on hover */
 }
 
+.subject-details .pyq {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subject-details .pyq h4 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.subject-details .pyq p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.subject-details .pyq p a {
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s; /* Add transition for hover effect */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.subject-details .pyq p a:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    color: #0056b3; /* Change color on hover */
+}
+
 .footer {
     width: 96%;
     text-align: center;
