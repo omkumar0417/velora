@@ -13,15 +13,11 @@ const subjectsData = {
         { name: "Advanced Calculus and Complex Analysis", link: "#", description: "Advanced Calculus and Complex Analysis covers advanced topics in calculus and complex number theory." },
         { name: "Chemistry", link: "#", description: "Chemistry is the study of substances and their properties." },
         { name: "Electrical & Electronics Engineering", link: "#", description: "Electrical & Electronics Engineering involves the study of electrical systems and electronic devices." },
-        { name: "Environmental Science", link: "#", description: "Environmental Science (Evs) is the study of the environment and solutions to environmental problems." },
         { name: "French", link: "#", description: "French is the study of the French language and its literature." },
         { name: "German", link: "#", description: "German is the study of the German language and its literature." },
         { name: "Japanese", link: "#", description: "Japanese is the study of the Japanese language and its literature." },
         { name: "Engineering Graphics and Design", link: "#", description: "Engineering Graphics and Design involves the creation of technical drawings and designs." },
-        { name: "Object-Oriented Design and Programming", link: "#", description: "Object-Oriented Design and Programming (OOP) is a programming paradigm based on the concept of objects." },
-        { name: "Universal Human Values", link: "#", description: "Universal Human Values focuses on the study of human values and ethics." },
-        { name: "Introduction to Programming Skills", link: "#", description: "Introduction to Programming Skills covers the basics of programming and coding." },
-        { name: "Constitution of India", link: "#", description: "Constitution of India covers the fundamental principles and laws of the Indian Constitution." }
+        { name: "Object-Oriented Design and Programming", link: "#", description: "Object-Oriented Design and Programming (OOP) is a programming paradigm based on the concept of objects." }
     ],
     3: [
         { name: "Operating Systems", link: "#", description: "Operating systems are software that manage computer hardware and software resources." },
@@ -60,22 +56,15 @@ const subjectsData = {
         { name: "Business Intelligence", link: "#", description: "Business intelligence (BI) is the technology-driven process for analyzing data and presenting actionable information to help executives, managers, and other corporate end users make informed business decisions." }
     ],
     7: [
-        { name: "Project Management", link: "#", description: "Project management is the practice of initiating, planning, executing, controlling, and closing the work of a team to achieve specific goals and meet specific success criteria at the specified time." },
-        { name: "Entrepreneurship", link: "#", description: "Entrepreneurship is the process of designing, launching, and running a new business." },
-        { name: "Innovation Management", link: "#", description: "Innovation management is the process of managing innovations in an organization." },
-        { name: "Leadership", link: "#", description: "Leadership is the art of motivating a group of people to act toward achieving a common goal." },
-        { name: "Strategic Management", link: "#", description: "Strategic management is the formulation and implementation of the major goals and initiatives taken by an organization's top management on behalf of owners." },
-        { name: "Financial Management", link: "#", description: "Financial management is the efficient and effective management of money in such a manner as to accomplish the objectives of the organization." },
-        { name: "Marketing Management", link: "#", description: "Marketing management is the process of developing strategies and planning for product or services, advertising, promotions, sales to reach desired customer segment." }
+        { name: "Artificial Neural Network", link: "#", description: "Artificial neural networks are computing systems inspired by the biological neural networks that constitute animal brains." },
+        { name: "Big Data Essentials", link: "#", description: "Big Data Essentials covers the fundamental concepts and tools needed to understand and work with big data." },
+        { name: "Business Strategy", link: "#", description: "Business Strategy involves the formulation and implementation of the major goals and initiatives taken by an organization's top management." },
+        { name: "Cloud Architecture", link: "#", description: "Cloud Architecture involves the components and subcomponents required for cloud computing." },
+        { name: "Data Warehousing and Mining", link: "#", description: "Data Warehousing and Mining involves the process of collecting, managing, and analyzing large sets of data." },
+        { name: "Modern Wireless Communication System", link: "#", description: "Modern Wireless Communication Systems cover the principles and technologies used in modern wireless communication." }
     ],
     8: [
-        { name: "Computer Science", link: "#", description: "Computer science is the study of computers and computational systems." },
-        { name: "Electronics", link: "#", description: "Electronics is the branch of physics and technology concerned with the design of circuits using transistors and microchips." },
-        { name: "Advanced Algorithms", link: "#", description: "Advanced algorithms are complex algorithms used to solve difficult computational problems." },
-        { name: "Advanced Data Structures", link: "#", description: "Advanced data structures are complex ways of organizing and storing data." },
-        { name: "Advanced Machine Learning", link: "#", description: "Advanced machine learning involves sophisticated techniques for training models on large datasets." },
-        { name: "Advanced Artificial Intelligence", link: "#", description: "Advanced artificial intelligence involves cutting-edge techniques for creating intelligent systems." },
-        { name: "Advanced Web Development", link: "#", description: "Advanced web development involves creating complex web applications." }
+        { name: "Major Project", link: "#", description: "Major Project involves the application of knowledge and skills acquired during the course to solve real-world problems." }
     ]
 };
 
@@ -142,6 +131,28 @@ function showSubjectDetails(semester, index) {
             <div class="pyq">
                 <h4>PYQ</h4>
                 <p><a href="https://drive.google.com/drive/folders/1-HHPkMpD-EOd9OCihRvAOR_YQpIKpmnD" target="_blank" class="pyq-link">All PYQS</a></p>
+            </div>
+            ` : semester === 8 && subject.name === "Major Project" || semester === 7 || semester === 1 || semester === 3 || semester === 4 || semester === 5 || semester === 6 ? `
+            <div class="notes">
+                <h4>Notes</h4>
+                <p>NO CONTENT AVAILABLE</p>
+            </div>
+            <div class="pyq">
+                <h4>PYQ</h4>
+                <p>NO CONTENT AVAILABLE</p>
+            </div>
+            ` : subject.name === "Advanced Calculus and Complex Analysis" ? `
+            <div class="notes">
+                <h4>Notes</h4>
+                <p><a href="https://drive.google.com/drive/folders/103TdS6aWsiNTfpXoRdkzrv-IgTrGDvcw" target="_blank" class="unit-link">Unit 1</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Unit_2" target="_blank" class="unit-link">Unit 2</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Unit_3" target="_blank" class="unit-link">Unit 3</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Unit_4" target="_blank" class="unit-link">Unit 4</a></p>
+                <p><a href="https://en.wikipedia.org/wiki/Unit_5" target="_blank" class="unit-link">Unit 5</a></p>
+            </div>
+            <div class="pyq">
+                <h4>PYQ</h4>
+                <p><a href="https://example.com/all-pyqs" target="_blank" class="pyq-link">All PYQS</a></p>
             </div>
             ` : `
             <div class="notes">
