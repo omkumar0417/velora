@@ -16,7 +16,8 @@ const subjectsData = {
         { name: "Data Structures", link: "#", description: "Data structures are ways of organizing and storing data." },
         { name: "Algorithms", link: "#", description: "Algorithms are step-by-step procedures for solving problems." },
         { name: "Discrete Mathematics", link: "#", description: "Discrete mathematics is the study of mathematical structures that are fundamentally discrete rather than continuous." },
-        { name: "Linear Algebra", link: "#", description: "Linear algebra is the branch of mathematics concerning linear equations and linear functions." }
+        { name: "Linear Algebra", link: "#", description: "Linear algebra is the branch of mathematics concerning linear equations and linear functions." },
+        { name: "Evs", link: "#", description: "Environmental Science (Evs) is the study of the environment and solutions to environmental problems." }
     ],
     3: [
         { name: "Operating Systems", link: "#", description: "Operating systems are software that manage computer hardware and software resources." },
