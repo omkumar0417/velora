@@ -23,17 +23,14 @@ header {
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Darker shadow */
     font-family: 'Roboto', sans-serif; /* Use a modern font */
+    position: relative; /* For tooltip positioning */
 }
 
 header h1 {
     margin: 0;
     font-size: 2em;
     /* Removed transition for hover effect */
-}
-
-header h1:hover {
-    transform: none; /* Remove scale up on hover */
-    color: inherit; /* Remove color change on hover */
+    position: relative; /* For tooltip positioning */
 }
 
 h1 {
@@ -528,4 +525,11 @@ h1 {
 .footer-left i:hover {
     transform: scale(1.2); /* Scale up on hover */
     color: #0056b3; /* Change color on hover */
+}
+
+.footer-left p,
+.footer-left a,
+.footer-left .social-icons a,
+.footer-left .footer-links a {
+    margin: 5px 0; /* Add 5px margin */
 }
