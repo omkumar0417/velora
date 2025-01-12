@@ -134,15 +134,14 @@ function showSubjectDetails(semester, index) {
             ${subject.name === "French" ? `
             <div class="notes">
                 <h4>Notes</h4>
-                <p><a href="https://example.com/complete-1-to-5-ppt" target="_blank" class="unit-link">Complete Notes Unit 1 to 5 PPT</a></p>
-                <p><a href="https://example.com/french-book" target="_blank" class="unit-link">French Book</a></p>
-                <p><a href="https://example.com/french-book-translation" target="_blank" class="unit-link">French Book Translation</a></p>
+                <p><a href="https://drive.google.com/file/d/1-e7pZ7tO4O8oKdGAQXQg6mSu8lwEw_L4/view?usp=drivesdk" target="_blank" class="unit-link">Complete Notes Unit 1 to 5 PPT</a></p>
+                <p><a href="https://drive.google.com/file/d/1-hYfORx0geAMRJsIkE8430J4aH6U8vpW/view?usp=drivesdk" target="_blank" class="unit-link">French Book</a></p>
+                <p><a href="https://drive.google.com/file/d/1-hqcQScWfeH2fQibOzBbBswCdsCzyVt4/view?usp=drivesdk" target="_blank" class="unit-link">French Book Translation</a></p>
+                <p><a href="https://drive.google.com/drive/folders/1-hr-WPKTjdEud3GW2L5cyshO9Q_EB6n-" target="_blank" class="unit-link">MORE MATERIALS</a></p>
             </div>
             <div class="pyq">
                 <h4>PYQ</h4>
-                <p><a href="https://example.com/pyq1" target="_blank" class="pyq-link">Previous Year Question 1</a></p>
-                <p><a href="https://example.com/pyq2" target="_blank" class="pyq-link">Previous Year Question 2</a></p>
-                <p><a href="https://example.com/pyq3" target="_blank" class="pyq-link">Previous Year Question 3</a></p>
+                <p><a href="https://drive.google.com/drive/folders/1-HHPkMpD-EOd9OCihRvAOR_YQpIKpmnD" target="_blank" class="pyq-link">All PYQS</a></p>
             </div>
             ` : `
             <div class="notes">
@@ -155,9 +154,7 @@ function showSubjectDetails(semester, index) {
             </div>
             <div class="pyq">
                 <h4>PYQ</h4>
-                <p><a href="https://example.com/pyq1" target="_blank" class="pyq-link">Previous Year Question 1</a></p>
-                <p><a href="https://example.com/pyq2" target="_blank" class="pyq-link">Previous Year Question 2</a></p>
-                <p><a href="https://example.com/pyq3" target="_blank" class="pyq-link">Previous Year Question 3</a></p>
+                <p><a href="https://example.com/all-pyqs" target="_blank" class="pyq-link">All PYQS</a></p>
             </div>
             `}
             <button onclick="showSemesters()">Back to Semesters</button>
